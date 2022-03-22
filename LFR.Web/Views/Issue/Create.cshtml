@@ -1,0 +1,218 @@
+﻿@model CreateIssueDto
+
+@{
+    ViewData["Title"] = "اضافة قضية جديدة";
+    Layout = null;
+}
+
+<form asp-action="Create" class="ajaxForm" tname="#kt_datatable">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input type="hidden" asp-for="IssueClient.UserType" value="@UserType.IssueClient" />
+
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="CategoryId" class="control-label"></label>
+            <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.categories">
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="IssueNumber" class="control-label"></label>
+            <input asp-for="IssueNumber" class="form-control" />
+            <span asp-validation-for="IssueNumber" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="OpponentName" class="control-label"></label>
+                <input asp-for="OpponentName" class="form-control" />
+                <span asp-validation-for="OpponentName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="TypesOfIssues" class="control-label"></label>
+                <select asp-for="TypesOfIssues" class="form-control">
+                    <option value="@TypesOfIssues.Civil">قضية مدنية</option>
+                    <option value="@TypesOfIssues.Punitive">قضية جزائية</option>
+                    <option value="@TypesOfIssues.Executive">قضية تنفيذية </option>
+
+                </select>
+                <span asp-validation-for="TypesOfIssues" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="DegreeOfLitigation" class="control-label"></label>
+                <select asp-for="DegreeOfLitigation" class="form-control">
+                    <option value="@DegreeOfLitigation.First">أول درجة</option>
+                    <option value="@DegreeOfLitigation.High">ثاني درجة</option>
+                    <option value="@DegreeOfLitigation.Second">نقض </option>
+
+                </select>
+                <span asp-validation-for="DegreeOfLitigation" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="CourtType" class="control-label"></label>
+                <select asp-for="CourtType" class="form-control">
+                    <option value="@CourtType.Gazapeace">صلح غزة</option>
+                    <option value="@CourtType.JabaliaPeace">صلح جباليا</option>
+                    <option value="@CourtType.Rafahpeace">صلح رفح </option>
+                    <option value="@CourtType.ThebeginningofGaza">بداية غزة</option>
+                    <option value="@CourtType.ThebeginningofKhanYounis">بداية خانيونس</option>
+                    <option value="@CourtType.Thebeginningofthenorth">بداية الشمال </option>
+                    <option value="@CourtType.DeiralBalahpeace">صلح دير البلح</option>
+                    <option value="@CourtType.CourtofCassation">محكمة النقض</option>
+                    <option value="@CourtType.Appellatecourt">محكمة الاستئناف </option>
+                    <option value="@CourtType.AdministrativeCourt">المحكمة الإدارية </option>
+
+                </select>
+                <span asp-validation-for="CourtType" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label"></label>
+                <input asp-for="EndDate" class="form-control" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Result" class="control-label"></label>
+                <input asp-for="Result" class="form-control" />
+                <span asp-validation-for="Result" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label class="control-label">نوع القضية</label>
+                <select id="issueClientType" class="form-control">
+                    <option value="5">--اختر--</option>
+                    <option value="1">اول مرة</option>
+                    <option value="2">موجود مسبقا</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" id="userInfo">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="IssueClient.FullName" class="control-label"></label>
+                <input asp-for="IssueClient.FullName" class="form-control" />
+                <span asp-validation-for="IssueClient.FullName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="IssueClient.PhoneNumber" class="control-label"></label>
+                <input asp-for="IssueClient.PhoneNumber" class="form-control" />
+                <span asp-validation-for="IssueClient.PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="IssueClient.Email" class="control-label"></label>
+                <input asp-for="IssueClient.Email" class="form-control" />
+                <span asp-validation-for="IssueClient.Email" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="userList">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="IssueClientId" class="control-label"></label>
+                <select asp-for="IssueClientId" class="form-control" asp-items="@ViewBag.IssueClient">
+                </select>
+                <span asp-validation-for="IssueClientId" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    @*<div class="row" id="lawyerChargeInfo">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="LawyerCharge.Number" class="control-label"></label>
+                <input asp-for="LawyerCharge.Number" class="form-control" />
+                <span asp-validation-for="LawyerCharge.Number" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="LawyerCharge.Payed" class="control-label"></label>
+                <input asp-for="LawyerCharge.Payed" class="form-control" />
+                <span asp-validation-for="LawyerCharge.Payed" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="LawyerCharge.CreatedAt" class="control-label"></label>
+                <input asp-for="LawyerCharge.CreatedAt" class="form-control" />
+                <span asp-validation-for="LawyerCharge.CreatedAt" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="LawyerCharge.CurrencyType" class="control-label"></label>
+            <select asp-for="LawyerCharge.CurrencyType" class="form-control">
+                <option value="@CurrencyType.Dinar">دينار</option>
+                <option value="@CurrencyType.Dollar">دولار</option>
+                <option value="@CurrencyType.Shekel">شيكل </option>
+
+            </select>
+            <span asp-validation-for="LawyerCharge.CurrencyType" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="LawyerCharge.PayFor" class="control-label"></label>
+            <input asp-for="LawyerCharge.PayFor" class="form-control" />
+            <span asp-validation-for="LawyerCharge.PayFor" class="text-danger"></span>
+        </div>
+    </div>*@
+    <div class="form-group">
+        <input type="submit" value="اضافة" class="btn btn-primary" />
+        <a data-dismiss="modal" aria-label="Close" class="btn btn-danger">الغاء</a>
+    </div>
+</form>
+
+<script>
+    PageLoadActions();
+
+    $('#userInfo').hide();
+    $('#userList').hide();
+
+    $('#issueClientType').on('change', function () {
+        if (this.value == 1) {
+            $('#userInfo').show();
+            $('#userList').hide();
+        } else if (this.value == 2) {
+            $('#userList').show();
+            $('#userInfo').hide();
+        }
+    });
+</script>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>

@@ -1,0 +1,46 @@
+﻿@model CreateCategoryDto
+
+@{
+    ViewData["Title"] = "إضافة تصنيف جديد";
+    Layout = null;
+}
+
+<form asp-action="Create" class="ajaxForm" tname="#kt_datatable">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="CategoryType" class="control-label"></label>
+            <select asp-for="CategoryType" class="form-control">
+                <option value="@CategoryType.Contract">عقد</option>
+                <option value="@CategoryType.Issue">قضية</option>
+                <option value="@CategoryType.NormalTreatment">معاملة عادية </option>
+
+            </select>
+            <span asp-validation-for="CategoryType" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <input type="submit" value="إضافة" class="btn btn-primary" />
+        <a data-dismiss="modal" aria-label="Close" class="btn btn-danger">إلغاء</a>
+    </div>
+</form>
+
+
+<script>
+    PageLoadActions();
+</script>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>

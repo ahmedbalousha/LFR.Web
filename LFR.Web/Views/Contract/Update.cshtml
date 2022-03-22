@@ -1,0 +1,123 @@
+﻿@model UpdateContractDto
+
+@{
+    ViewData["Title"] = "تعديل عقد ";
+    Layout = null;
+}
+
+<form asp-action="Update" class="ajaxForm" tname="#kt_datatable">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <label asp-for="CategoryId" class="control-label"></label>
+            <select asp-for="CategoryId" class="form-control" asp-items="@ViewBag.categories">
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="DateCreated" class="control-label"></label>
+            <input asp-for="DateCreated" class="form-control" />
+            <span asp-validation-for="DateCreated" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="FirstParty" class="control-label"></label>
+                <input asp-for="FirstParty" class="form-control" />
+                <span asp-validation-for="FirstParty" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="FirstPartyAdjective" class="control-label"></label>
+                <input asp-for="FirstPartyAdjective" class="form-control" />
+                <span asp-validation-for="FirstPartyAdjective" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="SecondParty" class="control-label"></label>
+                <input asp-for="SecondParty" class="form-control" />
+                <span asp-validation-for="SecondParty" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="SecondPartyAdjective" class="control-label"></label>
+                <input asp-for="SecondPartyAdjective" class="form-control" />
+                <span asp-validation-for="SecondPartyAdjective" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+        </div>
+
+    </div>
+   
+    @*<div class="row" id="lawyerChargeInfo">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="LawyerCharge.Number" class="control-label"></label>
+                <input asp-for="LawyerCharge.Number" class="form-control" />
+                <span asp-validation-for="LawyerCharge.Number" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="LawyerCharge.Payed" class="control-label"></label>
+                <input asp-for="LawyerCharge.Payed" class="form-control" />
+                <span asp-validation-for="LawyerCharge.Payed" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label asp-for="LawyerCharge.CreatedAt" class="control-label"></label>
+                <input asp-for="LawyerCharge.CreatedAt" class="form-control" />
+                <span asp-validation-for="LawyerCharge.CreatedAt" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="LawyerCharge.CurrencyType" class="control-label"></label>
+            <select asp-for="LawyerCharge.CurrencyType" class="form-control">
+                <option value="@CurrencyType.Dinar">دينار</option>
+                <option value="@CurrencyType.Dollar">دولار</option>
+                <option value="@CurrencyType.Shekel">شيكل </option>
+
+            </select>
+            <span asp-validation-for="LawyerCharge.CurrencyType" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label asp-for="LawyerCharge.PayFor" class="control-label"></label>
+            <input asp-for="LawyerCharge.PayFor" class="form-control" />
+            <span asp-validation-for="LawyerCharge.PayFor" class="text-danger"></span>
+        </div>
+    </div>*@
+    <div class="form-group">
+        <input type="submit" value="تعديل" class="btn btn-primary" />
+        <a data-dismiss="modal" aria-label="Close" class="btn btn-danger">الغاء</a>
+    </div>
+</form>
+
+<script>
+    PageLoadActions();
+</script>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
