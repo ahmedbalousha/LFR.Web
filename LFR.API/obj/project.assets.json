@@ -9178,11 +9178,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmedbalousha\\Downloads\\LFR-master\\LFR.API\\LFR.API.csproj",
+      "projectUniqueName": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.API\\LFR.API.csproj",
       "projectName": "LFR.API",
-      "projectPath": "C:\\Users\\ahmedbalousha\\Downloads\\LFR-master\\LFR.API\\LFR.API.csproj",
+      "projectPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.API\\LFR.API.csproj",
       "packagesPath": "C:\\Users\\ahmedbalousha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmedbalousha\\Downloads\\LFR-master\\LFR.API\\obj\\",
+      "outputPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmedbalousha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9199,8 +9199,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ahmedbalousha\\Downloads\\LFR-master\\LFR.Infrastructure\\LFR.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ahmedbalousha\\Downloads\\LFR-master\\LFR.Infrastructure\\LFR.Infrastructure.csproj"
+            "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Infrastructure\\LFR.Infrastructure.csproj": {
+              "projectPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Infrastructure\\LFR.Infrastructure.csproj"
             }
           }
         }

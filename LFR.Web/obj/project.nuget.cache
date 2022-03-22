@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C+OqPtxfeHFLqhpO/1ViLnMPPjm1JMXTCPJXUQDp2KUDwcU9G0fIStrsmSZsdJ8gGqNgyO0mW17eYPiQrcx31w==",
+  "dgSpecHash": "cvWYRADWNTBldEH06xnreGNxkGam19MT7OrIFBkXl1hmm/6EcmoSDb/nBf4NJTiM/7EoyfeCadfDlrcbRcthEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmedbalousha\\Downloads\\LFR-master\\LFR.Web\\LFR.Web.csproj",
+  "projectFilePath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Web\\LFR.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmedbalousha\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\ahmedbalousha\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
