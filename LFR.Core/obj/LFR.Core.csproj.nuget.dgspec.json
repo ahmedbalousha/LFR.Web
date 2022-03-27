@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Core\\LFR.Core.csproj": {}
+    "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Core\\LFR.Core.csproj": {}
   },
   "projects": {
-    "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Core\\LFR.Core.csproj": {
+    "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Core\\LFR.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Core\\LFR.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Core\\LFR.Core.csproj",
         "projectName": "LFR.Core",
-        "projectPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Core\\LFR.Core.csproj",
+        "projectPath": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Core\\LFR.Core.csproj",
         "packagesPath": "C:\\Users\\ahmedbalousha\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Core\\obj\\",
+        "outputPath": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahmedbalousha\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -8707,11 +8707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Infrastructure\\LFR.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Infrastructure\\LFR.Infrastructure.csproj",
       "projectName": "LFR.Infrastructure",
-      "projectPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Infrastructure\\LFR.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Infrastructure\\LFR.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ahmedbalousha\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahmedbalousha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8728,8 +8728,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Data\\LFR.Data.csproj": {
-              "projectPath": "D:\\Users\\ahmedbalousha\\Source\\Repos\\LFR.Web\\LFR.Data\\LFR.Data.csproj"
+            "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Data\\LFR.Data.csproj": {
+              "projectPath": "C:\\Users\\ahmedbalousha\\source\\repos\\ahmedbalousha\\LFR.Web\\LFR.Data\\LFR.Data.csproj"
             }
           }
         }
