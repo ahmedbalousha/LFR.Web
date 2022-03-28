@@ -96,3 +96,6 @@ C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5
 C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ahmedbalousha\source\repos\ahmedbalousha\LFR.Web\LFR.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

@@ -115,11 +115,11 @@ namespace LFR.Infrastructure.Services.Users
             //    user.ImageUrl = await _fileService.SaveFile(dto.Image, FolderNames.ImagesFolder);
             //}
 
-            var password = GenratePassword();
+            //var password = GenratePassword();
 
             try
             {
-                var result = await _userManager.CreateAsync(user, password);
+                var result = await _userManager.CreateAsync(user,dto.Password);
 
                 if (!result.Succeeded)
                 {
@@ -133,7 +133,7 @@ namespace LFR.Infrastructure.Services.Users
             }
 
 
-            await _emailService.Send(user.Email, "New Account !", $"Username is : {user.Email} and Password is { password }");
+            //await _emailService.Send(user.Email, "New Account !", $"Username is : {user.Email} and Password is { password }");
 
             return user.Id;
         }

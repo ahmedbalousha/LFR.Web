@@ -18,12 +18,13 @@ namespace LFR.Core.Dtos
         //[Phone]
         //[Display(Name = "رقم الجوال ")]
         public string PhoneNumber { get; set; }
-        [Display(Name = "الصورة")]
-        public IFormFile Image { get; set; }
+        //[Display(Name = "الصورة")]
+        //public IFormFile Image { get; set; }
         [Display(Name = "تاريخ الميلاد")]
         [DataType(DataType.Date)]
         public DateTime? DOB { get; set; }
         [Display(Name = "نوع المستخدم")]
         public UserType UserType { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace LFR.API.Controllers
             return Ok(GetResponse(user));
         }
         [HttpPost]
-        public IActionResult Create([FromBody] CreateUserDto dto)
+        public IActionResult Create(CreateUserDto dto)
         {
             var savedId = _userService.Create(dto);
             return Ok(GetResponse(savedId));
