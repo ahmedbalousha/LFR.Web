@@ -110,10 +110,10 @@ namespace LFR.Infrastructure.Services.Users
             var user = _mapper.Map<User>(dto);
             user.UserName = dto.Email;
 
-            //if (dto.Image != null)
-            //{
-            //    user.ImageUrl = await _fileService.SaveFile(dto.Image, FolderNames.ImagesFolder);
-            //}
+            if (dto.Image != null)
+            {
+                user.ImageUrl = await _fileService.SaveFile(dto.Image, FolderNames.ImagesFolder);
+            }
 
             //var password = GenratePassword();
 

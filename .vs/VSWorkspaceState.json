@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LFR.Infrastructure",
+    "\\LFR.Infrastructure\\Services",
+    "\\LFR.Infrastructure\\Services\\Users"
   ],
-  "SelectedNode": "\\LFR.sln",
+  "SelectedNode": "\\LFR.Infrastructure\\Services\\Users\\UserService.cs",
   "PreviewInSolutionExplorer": false
 }

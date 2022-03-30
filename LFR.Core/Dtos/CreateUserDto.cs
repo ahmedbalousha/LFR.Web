@@ -19,7 +19,7 @@ namespace LFR.Core.Dtos
         //[Display(Name = "رقم الجوال ")]
         public string PhoneNumber { get; set; }
         //[Display(Name = "الصورة")]
-        //public IFormFile Image { get; set; }
+        public IFormFile Image { get; set; }
         [Display(Name = "تاريخ الميلاد")]
         [DataType(DataType.Date)]
         public DateTime? DOB { get; set; }
